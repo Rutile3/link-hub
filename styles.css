@@ -1,0 +1,96 @@
+/* =========================================================
+ * 0) TOKENS (共通変数)
+ * =======================================================*/
+:root {
+    color-scheme: dark;
+
+    /* カスタムカラー */
+    --accent: #ffc107;
+    --muted: rgba(255, 255, 255, .65);
+    --border: rgba(255, 255, 255, .15);
+    --surface: rgba(255, 255, 255, .06);
+    --img-bg: #333;
+}
+
+/* =========================================================
+ * 1) BOOTSTRAP THEME OVERRIDES（白文字を既定に）
+ *   data-bs-theme="dark" を <body> に付与して使用
+ * =======================================================*/
+[data-bs-theme="dark"] {
+    --bs-body-color: #fff;
+    --bs-heading-color: #fff;
+    --bs-link-color: #fff;
+    --bs-link-hover-color: var(--accent);
+
+    /* 枠線/カードなども暗色に寄せる */
+    --bs-border-color: var(--border);
+    --bs-card-bg: var(--surface);
+    --bs-card-color: #fff;
+}
+
+/* ムードに合わせて muted も明るめに */
+.text-muted {
+    color: var(--muted) !important;
+}
+
+
+/* =========================================================
+ * 2) COMPONENTS / UTILITIES（サイト固有の見た目）
+ * =======================================================*/
+
+/* 背景をLit.Link風の質感に
+   ※ テキスト色はテーマ変数で決まるので color 指定は外す */
+.bg-texture {
+    /* 画像を使うなら： background: url('assets/bg.jpg') center/cover fixed; */
+    background:
+        radial-gradient(circle at 20% 20%, rgba(255, 255, 255, .06), transparent 40%),
+        radial-gradient(circle at 80% 0%, rgba(0, 0, 0, .08), transparent 40%),
+        repeating-linear-gradient(45deg, rgba(0, 0, 0, .04) 0 10px, rgba(0, 0, 0, .06) 10px 20px),
+        #4e4e4e;
+    /* ベースのグレー */
+}
+
+/* セクションの左に小さな飾り */
+.section-pill {
+    width: 10px;
+    height: 10px;
+    border-radius: 999px;
+    background: var(--accent);
+    display: inline-block;
+}
+
+/* カードのホバー演出 */
+.hover-rise {
+    transition: transform .15s ease, box-shadow .15s ease;
+}
+
+.hover-rise:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+}
+
+/* 動きを控えたいユーザーへの配慮 */
+@media (prefers-reduced-motion: reduce) {
+    .hover-rise {
+        transition: none;
+    }
+
+    .hover-rise:hover {
+        transform: none;
+        box-shadow: none;
+    }
+}
+
+/* 画像の比率がまちまちでも崩れないように */
+.card-img-top {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    background: var(--img-bg);
+    display: block;
+}
+
+/* ダッシュ境界（空きスロット用） */
+.border-dashed {
+    border: 2px dashed var(--bs-border-color);
+    background: rgba(255, 255, 255, .03);
+}
