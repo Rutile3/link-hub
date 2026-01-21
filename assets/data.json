@@ -1,0 +1,80 @@
+{
+  "games": [
+    {
+      "title": "ZigZap",
+      "desc": "アクション",
+      "img": "assets/games/zigzap.png",
+      "href": "https://rutile3.itch.io/zigzap"
+    },
+    {
+      "title": "Flip World",
+      "desc": "アクションパズル",
+      "img": "assets/games/flipworld.png",
+      "href": "https://rutile3.itch.io/flip-world"
+    },
+    {
+      "title": "チェイスタイル",
+      "desc": "パズル",
+      "img": "assets/games/chaistyle.png",
+      "href": "https://www.freem.ne.jp/win/game/16559"
+    },
+    {
+      "title": "KotonohaRun",
+      "desc": "アクション",
+      "img": "assets/games/kotonoha_run.png",
+      "href": "https://github.com/Rutile3/KotonohaRun/releases/latest"
+    }
+  ],
+  "tools": [
+    {
+      "title": "ドット絵リサイザー",
+      "desc": "画像加工ツール",
+      "img": "assets/tools/pixel-resizer.png",
+      "href": "https://rutile3.github.io/pixel-art-resizer/"
+    },
+    {
+      "title": "Lua ビットマスク判定式ジェネレータ",
+      "desc": "コーディング支援ツール",
+      "img": "assets/tools/lua-bitmap.png",
+      "href": "https://rutile3.github.io/lua-bitmask-expression-generator/"
+    },
+    {
+      "title": "Lua abs変換器",
+      "desc": "コーディング支援ツール",
+      "img": "assets/tools/lua-abs.png",
+      "href": "https://rutile3.github.io/lua-abs-converter/"
+    },
+    {
+      "title": "【パタポン2】育成コスト計算ツール",
+      "desc": "ゲームツール",
+      "img": "assets/tools/patapon2-growth-cost-calculator.png",
+      "href": "https://rutile3.github.io/patapon2-growth-cost-calculator/"
+    }
+  ],
+  "media": [
+    {
+      "title": "Cosense（総合）",
+      "desc": "",
+      "img": "assets/media/cosense.png",
+      "href": "https://scrapbox.io/Rutile3/"
+    },
+    {
+      "title": "Rutile3.tech",
+      "desc": "",
+      "img": "assets/media/cosense.png",
+      "href": "https://scrapbox.io/Rutile3-Tech/"
+    },
+    {
+      "title": "Qiita",
+      "desc": "",
+      "img": "assets/media/qiita.png",
+      "href": "https://qiita.com/Rutile3"
+    },
+    {
+      "title": "note（TCG）",
+      "desc": "",
+      "img": "assets/media/note.png",
+      "href": "https://note.com/rutile3"
+    }
+  ]
+}
