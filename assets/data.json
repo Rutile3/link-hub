@@ -63,18 +63,6 @@
       "desc": "",
       "img": "assets/media/cosense.png",
       "href": "https://scrapbox.io/Rutile3-Tech/"
-    },
-    {
-      "title": "Qiita",
-      "desc": "",
-      "img": "assets/media/qiita.png",
-      "href": "https://qiita.com/Rutile3"
-    },
-    {
-      "title": "note（TCG）",
-      "desc": "",
-      "img": "assets/media/note.png",
-      "href": "https://note.com/rutile3"
     }
   ]
 }
